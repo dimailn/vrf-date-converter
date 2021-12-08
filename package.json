@@ -1,0 +1,21 @@
+{
+  "name": "vrf-date-converter",
+  "version": "0.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc ./src/index.ts --outDir ./lib --target es6 --moduleResolution node",
+    "pub": "npm run build && npm publish"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.5.2",
+    "vrf": "^0.50.1-effects.15"
+  },
+  "dependencies": {
+    "lodash.set": "^4.3.2",
+    "recursive-iterator": "^3.3.0"
+  }
+}
