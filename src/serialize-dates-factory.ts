@@ -1,6 +1,6 @@
 import set from 'lodash.set'
 
-const isMoment = value => !!value.isValid
+const isMoment = value => value && !!value.isValid
 
 export default (postfixes: Array<string>, converter: (date: Date | any) => string) => {
   const serializeDates = (entity) => {

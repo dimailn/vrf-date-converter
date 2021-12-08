@@ -9,10 +9,10 @@ export default (
     parseDateConverter = (date) => new Date(date),
     serializeDateConverter = (value) => value.toISOString()
   } : {
-    postfixes: (postfixes: Array<string>) => Array<string>
-    parseDateConverter: (serializedDate: string | number) => Date
-    serializeDateConverter: (date: Date | any) => string
-  }
+    postfixes?: (postfixes: Array<string>) => Array<string>
+    parseDateConverter?: (serializedDate: string | number) => Date
+    serializeDateConverter?: (date: Date | any) => string
+  } = {}
 ) => {
   return {
     name: 'date-converter',
