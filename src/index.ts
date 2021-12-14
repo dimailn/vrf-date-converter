@@ -16,6 +16,7 @@ export default (
 ) => {
   return {
     name: 'date-converter',
+    api: true,
     effect({onAfterLoad, onBeforeSave}){
       const preparedPostfixes = postfixes(defaultPostfixes)
 
